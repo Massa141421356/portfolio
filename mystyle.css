@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inknut+Antiqua & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 2000px;
+  }
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/make-site.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.hero.active{
+    opacity: 1;
+    transition:all 4s ;
+}
+.logo{
+    float: left;
+    font-family: 'Noto Serif JP', serif;
+    font-size:50px ;
+    color: white;
+    margin:50px 130px 50px 150px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Noto Serif JP', serif;
+    margin-top:50px;
+    margin-bottom:50px;
+    width: 40%; 
+}
+
+nav ul li{
+    float: left;
+    
+}
+
+nav ul a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: lightseagreen;
+}
+
+
+
+.title{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index:1;
+    color: white;
+    font-size: 3.2rem;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+
+
+.sec-title{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Inknut Antiqua', serif;
+    color: black;
+}
+
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faceimg{
+    width: 400px;
+    border-radius: 20%;
+    margin:50px 0px 50px 250px;
+}
+
+
+
+.introsentence{
+    float: right;
+    font-family: 'Noto Serif JP', serif;
+    margin:50px 200px 50px 100px; 
+    font-size: 25px;
+}
+
+.sec-2title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Noto Serif JP', serif;
+    color: black;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center; 
+    grid-template-columns: repeat(4, 1fr); /* 4つの列を等間隔に配置 */
+    gap: 60px; /* グリッド間の間隔 */
+    
+}
+.square {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20%;
+    border: 4px solid;
+    transition: all 0.3s;
+}
+
+.note {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .note h2 {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: black;
+    text-decoration:none;
+    color: inherit; 
+    text-align: center;
+}
+
+
+
+ .time-etc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Noto Serif JP', serif;
+    color: rgb(165, 162, 162);
+    margin: 30px;
+}
+#square1 .image{
+    width: 100%;
+    height: 50%;
+    background-image: url('./images/tandem.png'); /* 画像のURLを指定 */
+    background-size: contain; /* 画像を枠の上半分に収める */
+    background-position: top; /* 画像を上側に配置 */
+}
+
+#square2 .image{
+    width: 100%;
+    height: 50%;
+    background-image: url('./images/doubt.jpg'); /* 画像のURLを指定 */
+    background-size: cover; /* 画像を枠の上半分に収める */
+    background-position: top; /* 画像を上側に配置 */
+}
+
+#square3 .image{
+    width: 300px;
+    height: 50%;
+    background-image: url('https://masapon14.com/wp-content/uploads/2022/09/Brown-Photo-Listen-Quotes-Facebook-Cover.png'); /* 画像のURLを指定 */
+    background-size: cover; /* 画像を枠の上半分に収める */
+    background-position: top; /* 画像を上側に配置 */
+    margin-left:1px ;
+    margin-top: -2px;
+}
+
+#square4 .image{
+    width: 100%;
+    height: 50%;
+    background-image: url('./images/fantasy.jpeg'); /* 画像のURLを指定 */
+    background-size: cover; /* 画像を枠の上半分に収める */
+    background-position: top; /* 画像を上側に配置 */
+}
+
+.square:hover{
+    transform: scale(1.15);
+}
+
+.new-post-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Inknut Antiqua', serif;
+    color: rgb(14, 103, 133);
+    border-bottom:solid rgb(63, 156, 187) 3px;
+}
+
+.new-post-list {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.rectangle {
+    width: 700px;
+    height: 100px;
+    position: relative;
+    margin: 30px;
+    cursor: pointer;
+    border: 4px solid;
+    display: flex;
+    border-radius:15px ;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.blog-contents {
+    top: 5px;
+    right: -20px;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    
+}
+ .blog-contents h2 {
+    margin:0;
+    font-family:'Noto Serif JP', serif;
+    color: black;
+    text-align: center; 
+    font-size: 23px;
+    z-index: 1; 
+}
+ .blog-time-etc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Noto Serif JP', serif;
+    color: rgb(165, 162, 162);
+    font-size: 13px;
+    margin: 0px;
+}
+#rectangle1 .blog-image{
+    width: 24%;
+    height: 100%;
+    background-image: url('https://masapon14.com/wp-content/uploads/2020/05/名称未設定のデザイン-1.png'); /* 画像のURLを指定 */
+    background-size: contain; 
+    background-position: left; /* 画像を左側に配置 */
+    
+}
+
+#rectangle2 .blog-image{
+    width: 24%;
+    height: 100%;
+    background-image: url('https://masapon14.com/wp-content/uploads/2022/10/ベルリッツって実際どうなの？.png'); /* 画像のURLを指定 */
+    background-size: contain; 
+    background-position: left; /* 画像を左側に配置 */
+}
+
+#rectangle3 .blog-image{
+    width: 24%;
+    height: 100%;
+    background-image: url('https://masapon14.com/wp-content/uploads/2022/09/段落テキスト.png'); /* 画像のURLを指定 */
+    background-size: contain; 
+    background-position: left; /* 画像を左側に配置 */
+}
+
+#rectangle4 .blog-image{
+    width: 24%;
+    height: 100%;
+    background-image: url('./images/book.jpeg'); /* 画像のURLを指定 */
+    background-size: contain; 
+    background-position: left; /* 画像を左側に配置 */
+}
+
+.rectangle:hover{
+    transform: scale(1.15);
+}
+
+.motto{
+    width: 12%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: lightseagreen;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.motto:hover{
+    transform: scale(1.2);
+}
+
+.motto a{
+    font-size: 1.4rem;
+    font-family: 'Inknut Antiqua', serif;
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(94, 140, 231);
+    padding: 20px 0;
+}
+
+.footer a{
+    font-size: 1.3rem;
+    font-family: 'Inknut Antiqua', serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

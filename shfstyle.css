@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inknut+Antiqua & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero{
+    height: 15vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo{
+    float: left;
+    font-family: 'Noto Serif JP', serif;
+    font-size:50px ;
+    color: Black;
+    margin:50px 130px 50px 150px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Noto Serif JP', serif;
+    margin-top:50px;
+    margin-bottom:50px;
+    width: 40%; 
+}
+
+nav ul li{
+    float: left;
+    
+}
+
+nav ul a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: lightseagreen;
+}
+
+
+
+.main .page-title{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.main .i-image{
+    width: 100%;
+    height: auto;
+    margin-top:80px;
+    margin-bottom: 10px;
+    top: 60%;
+    justify-content: center;
+}
+
+.main .i-image  img{
+    justify-content: center;
+   margin: 0 auto;
+}
+
+.main .sec{
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.main .page-contents{
+    margin: 30px auto;
+    text-align: left;
+}
+
+.main .page-contents h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+.main .page-contents h2 {
+    display: inline-block;
+    border-bottom: 2px solid lightskyblue; /* 下線のスタイルを指定 */
+  }
+
+.semi-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(82, 154, 199);
+    margin: 50px auto;
+    width: 50%;
+  }
+
+.semi-footer .faceimg1{
+    width: 110px;
+    border-radius: 50%;
+}
+
+.semi-footer .line{
+    justify-content: center;
+    margin:5px 0px;
+    text-align: center;
+    
+}
+
+
+.semi-footer p{
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    
+}
+.semi-intro{
+     width: 66%;
+     margin:20px 0px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(94, 140, 231);
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a{
+    font-size: 1.3rem;
+    font-family: 'Inknut Antiqua', serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
